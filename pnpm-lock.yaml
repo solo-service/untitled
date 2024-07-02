@@ -11,6 +11,9 @@ importers:
       expo:
         specifier: ~51.0.17
         version: 51.0.17(@babel/core@7.24.7)(@babel/preset-env@7.24.7(@babel/core@7.24.7))
+      expo-location:
+        specifier: ^17.0.1
+        version: 17.0.1(expo@51.0.17(@babel/core@7.24.7)(@babel/preset-env@7.24.7(@babel/core@7.24.7)))
       expo-status-bar:
         specifier: ~1.12.1
         version: 1.12.1
@@ -20,6 +23,9 @@ importers:
       react-native:
         specifier: 0.74.2
         version: 0.74.2(@babel/core@7.24.7)(@babel/preset-env@7.24.7(@babel/core@7.24.7))(@types/react@18.2.79)(react@18.2.0)
+      react-native-maps:
+        specifier: ^1.15.6
+        version: 1.15.6(react-native@0.74.2(@babel/core@7.24.7)(@babel/preset-env@7.24.7(@babel/core@7.24.7))(@types/react@18.2.79)(react@18.2.0))(react@18.2.0)
     devDependencies:
       '@babel/core':
         specifier: ^7.20.0
@@ -1074,6 +1080,9 @@ packages:
   '@sinonjs/fake-timers@10.3.0':
     resolution: {integrity: sha512-V4BG07kuYSUkTCSBHG8G8TNhM+F19jXFWnQtzj+we8DrkpSBCee9Z3Ms8yiGer/dlmhe35/Xdgyo3/0rQKg7YA==}
 
+  '@types/geojson@7946.0.14':
+    resolution: {integrity: sha512-WCfD5Ht3ZesJUsONdhvm84dmzWOiOzOAqOncN0++w0lBw1o8OuDNJF2McvvCef/yBqb/HYRahp1BYtODFQ8bRg==}
+
   '@types/istanbul-lib-coverage@2.0.6':
     resolution: {integrity: sha512-2QF/t/auWm0lsy8XtKVPG19v3sSOQlJe/YHZgfjb/KBBHOGSV+J2q/S671rcq9uTBrLAXmZpqJiaQbMT+zNU1w==}
 
@@ -1792,6 +1801,11 @@ packages:
 
   expo-keep-awake@13.0.2:
     resolution: {integrity: sha512-kKiwkVg/bY0AJ5q1Pxnm/GvpeB6hbNJhcFsoOWDh2NlpibhCLaHL826KHUM+WsnJRbVRxJ+K9vbPRHEMvFpVyw==}
+    peerDependencies:
+      expo: '*'
+
+  expo-location@17.0.1:
+    resolution: {integrity: sha512-m+OzotzlAXO3ZZ1uqW5GC25nXW868zN+ROyBA1V4VF6jGay1ZEs4URPglCVUDzZby2F5wt24cMzqDKw2IX6nRw==}
     peerDependencies:
       expo: '*'
 
@@ -3026,6 +3040,17 @@ packages:
 
   react-is@18.3.1:
     resolution: {integrity: sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==}
+
+  react-native-maps@1.15.6:
+    resolution: {integrity: sha512-RRyjMvpMoV3249kJ9PA1JjZE/8FmYYHrHuloI/Vzkg/DjxFtJAbFnCnhg5AyS/LI5/n2riulbVl4qpiKpuO22Q==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      react: '>= 17.0.1'
+      react-native: '>= 0.64.3'
+      react-native-web: '>= 0.11'
+    peerDependenciesMeta:
+      react-native-web:
+        optional: true
 
   react-native@0.74.2:
     resolution: {integrity: sha512-EBMBjPPL4/GjHMP4NqsZabT3gI5WU9cSmduABGAGrd8uIcmTZ5F2Ng9k6gFmRm7n8e8CULxDNu98ZpQfBjl7Bw==}
@@ -5528,6 +5553,8 @@ snapshots:
     dependencies:
       '@sinonjs/commons': 3.0.1
 
+  '@types/geojson@7946.0.14': {}
+
   '@types/istanbul-lib-coverage@2.0.6': {}
 
   '@types/istanbul-lib-report@3.0.3':
@@ -6312,6 +6339,10 @@ snapshots:
       fontfaceobserver: 2.3.0
 
   expo-keep-awake@13.0.2(expo@51.0.17(@babel/core@7.24.7)(@babel/preset-env@7.24.7(@babel/core@7.24.7))):
+    dependencies:
+      expo: 51.0.17(@babel/core@7.24.7)(@babel/preset-env@7.24.7(@babel/core@7.24.7))
+
+  expo-location@17.0.1(expo@51.0.17(@babel/core@7.24.7)(@babel/preset-env@7.24.7(@babel/core@7.24.7))):
     dependencies:
       expo: 51.0.17(@babel/core@7.24.7)(@babel/preset-env@7.24.7(@babel/core@7.24.7))
 
@@ -7666,6 +7697,12 @@ snapshots:
   react-is@17.0.2: {}
 
   react-is@18.3.1: {}
+
+  react-native-maps@1.15.6(react-native@0.74.2(@babel/core@7.24.7)(@babel/preset-env@7.24.7(@babel/core@7.24.7))(@types/react@18.2.79)(react@18.2.0))(react@18.2.0):
+    dependencies:
+      '@types/geojson': 7946.0.14
+      react: 18.2.0
+      react-native: 0.74.2(@babel/core@7.24.7)(@babel/preset-env@7.24.7(@babel/core@7.24.7))(@types/react@18.2.79)(react@18.2.0)
 
   react-native@0.74.2(@babel/core@7.24.7)(@babel/preset-env@7.24.7(@babel/core@7.24.7))(@types/react@18.2.79)(react@18.2.0):
     dependencies:
